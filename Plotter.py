@@ -115,7 +115,7 @@ def reconstruction_error_vs_threshold_check(error_df):
     plt.show()
 
 
-def confusion_matrix(error_df):
+def visualize_confusion_matrix(error_df):
     col_list = ["cerulean", "scarlet"]  # https://xkcd.com/color/rgb/
     # Set color_codes to False there is a bug in Seaborn 0.9.0 -- https://github.com/mwaskom/seaborn/issues/1546
     sns.set(style='white', font_scale=1.75, palette=sns.xkcd_palette(col_list), color_codes=False)
